@@ -10,13 +10,13 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   function getWeatherIcon(code) {
-    if (code === 0) return "/icon-sunny.webp";
-    if ([1, 2, 3].includes(code)) return "/icon-partly-cloudy.webp";
-    if ([45, 48].includes(code)) return "/icon-fog.webp";
-    if ([51, 53, 55].includes(code)) return "/icon-drizzle.webp";
-    if ([61, 63, 65, 80, 81, 82].includes(code)) return "/icon-rain.webp";
-    if ([71, 73, 75, 77].includes(code)) return "/icon-snow.webp";
-    if ([95, 96, 99].includes(code)) return "/icon-storm.webp";
+    if (code === 0) return "./icon-sunny.webp";
+    if ([1, 2, 3].includes(code)) return "./icon-partly-cloudy.webp";
+    if ([45, 48].includes(code)) return "./icon-fog.webp";
+    if ([51, 53, 55].includes(code)) return "./icon-drizzle.webp";
+    if ([61, 63, 65, 80, 81, 82].includes(code)) return "./icon-rain.webp";
+    if ([71, 73, 75, 77].includes(code)) return "./icon-snow.webp";
+    if ([95, 96, 99].includes(code)) return "./icon-storm.webp";
 
     return "/icon-loading.svg";
   }
@@ -75,7 +75,7 @@ function App() {
             gap: "10px",
           }}
         >
-          <img src="/icon-search.svg"></img>
+          <img src="./icon-search.svg"></img>
           <input
             placeholder="Search for a place"
             style={{

@@ -14,7 +14,7 @@ export function Header() {
         }}
       >
         <div style={{ display: "flex" }}>
-          <img src="/public/logo.svg" />
+          <img src="./public/logo.svg" />
         </div>
         <div>
           <p
